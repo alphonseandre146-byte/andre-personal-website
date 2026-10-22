@@ -3,185 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andre personal website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Andre Alphonse's personal website, technology interests, and student projects.">
+    <title>Andre Alphonse | Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!DOCTYPE html>
-
-<html lang="en">
-
-
-
-<ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
-
-
-<div id="home">
-
-    <div class="home-text">
-
-        <p class="small-text">WELCOME TO MY WEBSITE</p>
-
-        <h1>Hi, I'm <span>Andre</span></h1>
-
-        <h2>Student • Web Developer • Technology Enthusiast</h2>
-
-        <p>
-            This website is a collection of my interests, skills and
-            projects as I continue learning about technology and
-            web development.
-        </p>
-
-        <a class="button" href="#portfolio">View My Work</a>
-
-    </div>
-
-    
-    <img src="web design.jpg" alt="Andre's profile picture">
-
-</div>
-
-
-<div id="about">
-
-    <h1>About Me</h1>
-
-    <p>
-        My name is Andre Alphonse. I am a student interested in computers,
-        web development and technology. I enjoy learning how websites are
-        created and how different computer systems work.
-    </p>
-
-    <p>
-        My goal is to improve my programming and web development skills
-        while creating useful and creative projects.
-    </p>
-
-    <h2>My Skills</h2>
-
-    <div class="skills">
-
-        <div class="skill">
-            <h3>HTML</h3>
-            <p>Good - Create and organize webpages</p>
+    <!-- Header contains the website name and navigation links. -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-name" href="#home">Andre <span>Alphonse</span></a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#learning">Learning</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="skill">
-            <h3>CSS</h3>
-            <p>Good - Style webpages and create layouts</p>
-        </div>
+    <main>
+        <!-- Home section introduces Andre and links to the portfolio. -->
+        <section id="home" class="home-section">
+            <div class="home-text">
+                <p class="small-text">WELCOME TO MY WEBSITE</p>
+                <h1>Hi, I'm <span class="name-glow">Andre</span></h1>
+                <h2>Student • Web Developer • Technology Enthusiast</h2>
+                <p>
+                    This website is a collection of my interests, skills and
+                    projects as I continue learning about technology and
+                    web development.
+                </p>
+                <a class="button" href="#portfolio">View My Work <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="home-image-wrap">
+                <!-- Replace this local sample image with your own photo if desired. -->
+                <img class="profile-image" src="images/web-design.svg" alt="Illustration representing Andre's web design interests">
+                <p class="image-caption">LEARN • BUILD • IMPROVE</p>
+            </div>
+        </section>
 
-        <div class="skill">
-            <h3>Python</h3>
-            <p>Beginner - Create basic programs and algorithms</p>
-        </div>
+        <!-- About section explains personal interests and goals. -->
+        <section id="about" class="content-section">
+            <div class="section-heading">
+                <p class="small-text">01 / ABOUT ME</p>
+                <h2>About <span>Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        My name is Andre Alphonse. I am a student interested in computers,
+                        web development and technology. I enjoy learning how websites are
+                        created and how different computer systems work.
+                    </p>
+                    <p>
+                        My goal is to improve my programming and web development skills
+                        while creating useful and creative projects. I also enjoy learning
+                        about networking and how devices communicate.
+                    </p>
+                </div>
+                <aside class="goal-card">
+                    <h3>My goal</h3>
+                    <p>Keep learning, practise new skills, and build projects that solve real problems.</p>
+                </aside>
+            </div>
+        </section>
 
-        <div class="skill">
-            <h3>Networking</h3>
-            <p>Beginner - Work with basic networks and Packet Tracer</p>
-        </div>
+        <!-- Portfolio projects are grouped into individual article elements. -->
+        <section id="portfolio" class="content-section section-darker">
+            <div class="section-heading">
+                <p class="small-text">02 / MY WORK</p>
+                <h2>My <span>Portfolio</span></h2>
+                <p class="section-description">Some areas and projects I have explored while developing my technology skills.</p>
+            </div>
+            <div class="projects">
+                <article class="project">
+                    <img src="images/web-design.svg" alt="Illustration of a web page layout" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-type">WEB DEVELOPMENT</p>
+                        <h3>Personal Website</h3>
+                        <p>A personal website created using HTML5 and CSS3. It includes navigation, images, video and information about my skills.</p>
+                        <div class="tag-list"><span>HTML5</span><span>CSS3</span></div>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="images/smart-parking.svg" alt="Illustration of parking spaces in a smart parking system" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-type">PROJECT CONCEPT</p>
+                        <h3>Smart Parking Website</h3>
+                        <p>A concept for a TAMCC smart parking website that could display parking availability using information from sensors.</p>
+                        <div class="tag-list"><span>Smart systems</span><span>TAMCC</span></div>
+                    </div>
+                </article>
+                <article class="project">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Computer circuit board representing computer systems and networking" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-type">NETWORKING</p>
+                        <h3>Networking Project</h3>
+                        <p>A Cisco Packet Tracer project involving VLANs, subnets, router-on-a-stick and basic network configuration.</p>
+                        <div class="tag-list"><span>Packet Tracer</span><span>Networking</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    </div>
+        <!-- Skills are presented in a table as required for the redesign. -->
+        <section id="skills" class="content-section">
+            <div class="section-heading">
+                <p class="small-text">03 / MY SKILLS</p>
+                <h2>Skills I'm <span>Building</span></h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Good — creating and organising webpages.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Good — styling webpages and creating layouts.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Python</h3>
+                    <p>Beginner — creating basic programs and algorithms.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Networking</h3>
+                    <p>Beginner — learning networks and Cisco Packet Tracer.</p>
+                </article>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <caption>My current learning areas</caption>
+                    <thead>
+                        <tr><th scope="col">Area</th><th scope="col">What I practise</th><th scope="col">Progress</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>HTML</td><td>Organising page content and links</td><td>Good</td></tr>
+                        <tr><td>CSS</td><td>Colours, layout and responsive design</td><td>Good</td></tr>
+                        <tr><td>Python</td><td>Basic programming and algorithms</td><td>Beginner</td></tr>
+                        <tr><td>Networking</td><td>IP addressing, VLANs and devices</td><td>Beginner</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-</div>
+        <!-- This section includes an online learning video and a direct link. -->
+        <section id="learning" class="content-section section-darker">
+            <div class="section-heading">
+                <p class="small-text">04 / LEARNING</p>
+                <h2>Website <span>Media</span></h2>
+                <p class="section-description">A video resource I use as part of learning and practising technology.</p>
+            </div>
+            <div class="media-panel">
+                <div class="media-copy">
+                    <h3>Learning video</h3>
+                    <p>Watch the video here or open it directly on YouTube.</p>
+                    <a class="text-link" href="https://www.youtube.com/watch?v=M7LBvsdhCuI" target="_blank" rel="noopener noreferrer">Open on YouTube ↗</a>
+                </div>
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/M7LBvsdhCuI"
+                        title="Learning video from YouTube"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact section provides the details shared on the original website. -->
+        <section id="contact" class="content-section contact-section">
+            <div class="section-heading">
+                <p class="small-text">05 / GET IN TOUCH</p>
+                <h2>Contact <span>Me</span></h2>
+            </div>
+            <p class="section-description">Thanks for visiting my website. Feel free to use the contact information below.</p>
+            <div class="contact-box">
+                <p><strong>Name:</strong> Andre Alphonse</p>
+                <p><strong>Email:</strong> <a href="mailto:alphonseandre146@gmail.com">alphonseandre146@gmail.com</a></p>
+                <p><strong>Location:</strong> Grenada</p>
+            </div>
+        </section>
+    </main>
 
-<div id="portfolio">
-
-    <h1>My Portfolio</h1>
-
-    <p>
-        Here are some of the areas and projects I have worked on while
-        developing my technology skills.
-    </p>
-
-    <div class="projects">
-
-        <div class="project">
-
-            <h2>Personal Website</h2>
-
-            <p>
-                A personal website created using HTML5 and CSS3.
-                It includes navigation, images, video and information
-                about my skills.
-            </p>
-
-        </div>
-
-
-        <div class="project">
-
-            <h2>Smart Parking Website</h2>
-
-            <p>
-                A website project based on a smart parking lot that can
-                display parking availability using sensor information.
-            </p>
-
-        </div>
-
-
-        <div class="project">
-
-            <h2>Networking Project</h2>
-
-            <p>
-                A Cisco Packet Tracer project using VLANs, subnets,
-                router-on-a-stick and basic network configuration.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <h2>Website Media</h2>
-
-    <div class="media">
-
-        <img src="web design.jpg" alt="Andre's technology project">
-
-        <iframe 
-    width="600" 
-    height="350"
-    src="https://www.youtube.com/embed/M7LBvsdhCuI"
-    title="My Video"
-    allowfullscreen>
-</iframe>
-
-    </div>
-
-</div>
-
-
-<div id="contact">
-
-    <h1>Contact Me</h1>
-
-    <p>
-        If you would like to get in contact with me, you can use the
-        information below.
-    </p>
-
-    <div class="contact-box">
-
-        <p><strong>Name:</strong> Andre Alphonse</p>
-
-        <p><strong>Email:</strong> alphonseandre146@gmail.com</p>
-
-        <p><strong>Location:</strong> Grenada</p>
-
-    </div>
-
-</div>
-
-
-
+    <!-- Footer provides copyright information and a shortcut to the top. -->
+    <footer class="site-footer">
+        <p>© 2026 Andre Alphonse. Personal website created for learning and practice.</p>
+        <a href="#home">Back to top ↑</a>
+        <a href="#top" class="back-to-top">Back to top ↑</a>    
+    </footer>
 </body>
 </html>
