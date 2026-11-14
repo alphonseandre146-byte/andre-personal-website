@@ -28,4 +28,4 @@ The Back-to-Top button allows visitors to quickly return to the top of the websi
 - Visual Studio Code
 
 ## Conclusion
-The five JavaScript features improve the functionality and interactivity of my personal website. They provide visitors with additional ways to interact with the website and create a better browsing experience.
+The five JavaScript features improve the functionality and interactivity of my personal website. They provide visitors with additional ways to interact with the website and create a better browsing experience and a more friendly user website.
