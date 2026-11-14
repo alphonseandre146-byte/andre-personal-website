@@ -629,3 +629,193 @@ td {
 html {
     scroll-behavior: smooth;
 }
+
+/* =====================================
+   JAVASCRIPT FEATURES
+   These styles are added without replacing the original design.
+   ===================================== */
+
+/* FEATURE 1: DARK AND LIGHT MODE */
+.theme-button {
+    padding: 10px 16px;
+    border: 1px solid #00c8ff;
+    border-radius: 5px;
+    background: #102236;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.theme-button:hover,
+.theme-button:focus-visible {
+    background: #00c8ff;
+    color: #001018;
+}
+
+/* FEATURE 2: DIGITAL CLOCK */
+.clock-box {
+    display: inline-block;
+    margin: 5px 0 25px;
+    padding: 15px 25px;
+    border: 1px solid #00c8ff;
+    border-radius: 8px;
+    background: rgba(12, 18, 26, 0.92);
+    box-shadow: 0 0 12px rgba(0, 200, 255, 0.2);
+}
+
+.clock-box p {
+    color: #cccccc;
+    font-size: 12px;
+}
+
+.clock-box h3 {
+    margin-top: 5px;
+    color: #00c8ff;
+    font-size: 25px;
+}
+
+/* FEATURE 3: WELCOME MESSAGE */
+.welcome-message {
+    margin: 0 0 12px;
+    color: #00c8ff;
+    font-weight: bold;
+}
+
+/* FEATURE 4: PARAGRAPH BACKGROUND COLOUR CHANGER */
+.colour-controls {
+    margin: 10px 0 20px;
+}
+
+.colour-controls p {
+    margin-bottom: 10px;
+    color: #00c8ff;
+    font-weight: bold;
+}
+
+.colour-button {
+    margin: 4px;
+    padding: 8px 14px;
+    border: 1px solid #00c8ff;
+    border-radius: 5px;
+    background: #102236;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.colour-button:hover,
+.colour-button:focus-visible {
+    background: #00c8ff;
+    color: #001018;
+}
+
+/* FEATURE 5: SHOW BACK TO TOP ONLY AFTER SCROLLING */
+.back-to-top {
+    display: none;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+    background-color: #f1f5f9;
+    background-image: none;
+    color: #142033;
+}
+
+body.light-mode .site-header {
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom-color: #c5d5e5;
+}
+
+body.light-mode nav a {
+    color: #142033;
+}
+
+body.light-mode nav a:hover,
+body.light-mode nav a:focus-visible {
+    color: #006b91;
+    background: #dceef5;
+}
+
+body.light-mode .home-text h2,
+body.light-mode .home-text > p:not(.small-text),
+body.light-mode .about-grid p,
+body.light-mode .section-description,
+body.light-mode .content-section > p {
+    color: #344256;
+}
+
+body.light-mode .goal-card,
+body.light-mode .skill-card,
+body.light-mode .project,
+body.light-mode .contact-box,
+body.light-mode .clock-box,
+body.light-mode .media-panel {
+    background: #ffffff;
+    color: #142033;
+}
+
+body.light-mode .goal-card p,
+body.light-mode .skill-card p,
+body.light-mode .project-content > p:not(.project-type),
+body.light-mode .contact-box p,
+body.light-mode .media-copy p,
+body.light-mode td,
+body.light-mode .clock-box p {
+    color: #344256;
+}
+
+body.light-mode .section-darker {
+    background: #e6edf5;
+    border-color: #c5d5e5;
+}
+
+body.light-mode th {
+    background: #dce8f2;
+    color: #006b91;
+}
+
+body.light-mode td {
+    color: #344256;
+    border-color: #c5d5e5;
+}
+
+body.light-mode .site-footer {
+    background: #ffffff;
+    border-top-color: #c5d5e5;
+}
+
+body.light-mode .site-footer p,
+body.light-mode .site-footer a {
+    color: #344256;
+}
+
+body.light-mode .contact-box a {
+    color: #006b91;
+}
+
+body.light-mode .theme-button {
+    background: #e6edf5;
+    color: #142033;
+}
+
+/* RESPONSIVE JAVASCRIPT FEATURES */
+@media (max-width: 900px) {
+    .theme-button {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .colour-button {
+        margin-bottom: 8px;
+    }
+
+    .clock-box {
+        padding: 12px 20px;
+    }
+}

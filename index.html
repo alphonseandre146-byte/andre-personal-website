@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Andre Alphonse's personal website, technology interests, and student projects.">
-    <title>Andre Alphonse | Personal Website</title>
+    <title>Andre Alphonse Personal Website with JavaScript</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Header contains the website name and navigation links. -->
+    
     <header class="site-header">
         <div class="header-inner">
             <a class="site-name" href="#home">Andre <span>Alphonse</span></a>
@@ -22,16 +23,31 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- FEATURE 1: DARK AND LIGHT MODE -->
+            <button type="button" id="themeToggle" class="theme-button">
+                Light Mode
+            </button>
         </div>
     </header>
 
     <main>
-        <!-- Home section introduces Andre and links to the portfolio. -->
+
         <section id="home" class="home-section">
             <div class="home-text">
                 <p class="small-text">WELCOME TO MY WEBSITE</p>
+
+                <!-- FEATURE 3: WELCOME MESSAGE -->
+                <p id="welcomeMessage" class="welcome-message"></p>
+
                 <h1>Hi, I'm <span class="name-glow">Andre</span></h1>
                 <h2>Student • Web Developer • Technology Enthusiast</h2>
+
+                <!-- FEATURE 2: DIGITAL CLOCK -->
+                <div class="clock-box">
+                    <p>Current Time</p>
+                    <h3 id="digitalClock">00:00:00</h3>
+                </div>
                 <p>
                     This website is a collection of my interests, skills and
                     projects as I continue learning about technology and
@@ -54,11 +70,20 @@
             </div>
             <div class="about-grid">
                 <div>
-                    <p>
+                    <p id="aboutText">
                         My name is Andre Alphonse. I am a student interested in computers,
                         web development and technology. I enjoy learning how websites are
                         created and how different computer systems work.
                     </p>
+
+                    <!-- FEATURE 4: PARAGRAPH BACKGROUND COLOUR CHANGER -->
+                    <div class="colour-controls">
+                        <p>Change paragraph background colour:</p>
+                        <button type="button" class="colour-button" data-colour="#102236">Blue</button>
+                        <button type="button" class="colour-button" data-colour="#174d36">Green</button>
+                        <button type="button" class="colour-button" data-colour="#55316b">Purple</button>
+                    </div>
+
                     <p>
                         My goal is to improve my programming and web development skills
                         while creating useful and creative projects. I also enjoy learning
@@ -194,7 +219,7 @@
     <footer class="site-footer">
         <p>© 2026 Andre Alphonse. Personal website created for learning and practice.</p>
         <a href="#home">Back to top ↑</a>
-        <a href="#top" class="back-to-top">Back to top ↑</a>    
+        <a href="#home" id="backToTop" class="back-to-top">Back to top ↑</a>
     </footer>
 </body>
 </html>
